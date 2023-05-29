@@ -10,9 +10,10 @@ import scrapy
 
 class ScrapyFolhaItem(scrapy.Item):
     # define the fields for your item here like:
-    title      = scrapy.Field()
-    text       = scrapy.Field()
-    created_at = scrapy.Field()
-    link       = scrapy.Field()
-    category   = scrapy.Field()
+    title       = scrapy.Field()
+    text        = scrapy.Field()
+    date        = scrapy.Field()
+    link        = scrapy.Field()
+    category    = scrapy.Field()
     subcategory = scrapy.Field()
+    page        = scrapy.Field()

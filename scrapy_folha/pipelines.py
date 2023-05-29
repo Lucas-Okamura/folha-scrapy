@@ -19,7 +19,7 @@ class ParseCategory(object):
 class CleanData(object):
     # Remove \t\r\n
     def process_item(self, item, spider):
-        for field in ['text', 'created_at']:
+        for field in ['text', 'date', 'title']:
           item[field] = item[field].replace('\t', ' ')
           item[field] = item[field].replace('\r', ' ')
           item[field] = item[field].replace('\n', ' ')
