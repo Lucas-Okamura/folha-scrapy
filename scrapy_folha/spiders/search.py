@@ -95,5 +95,5 @@ class SearchSpider(scrapy.Spider):
       text       = "".join(response.css(text_html).extract())
       date       = "".join(response.css('meta[property="article:published_time"]::attr(content)').extract())
 
-      article = ScrapyFolhaItem(title=title, date=date, text=text, link=link, page=i)
+      article = ScrapyFolhaItem(title=title, date=date, text=text, link=link, page=self.i)
       yield article

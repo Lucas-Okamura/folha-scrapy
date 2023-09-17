@@ -16,10 +16,10 @@ NEWSPIDER_MODULE = 'scrapy_folha.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapy_folha (+http://www.yourdomain.com)'
+USER_AGENT = 'Googlebot/2.1'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
